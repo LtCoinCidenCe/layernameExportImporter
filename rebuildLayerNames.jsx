@@ -35,7 +35,7 @@ function main() {
     }
     else {
         var file = File(importInfo.destination);
-        file.encoding = 'shift-jis';
+        file.encoding = 'shift-jis'; // comment this line if you modify the encoding by yourself
         file.open("r");
         var strctText = file.read();
         file.close();
