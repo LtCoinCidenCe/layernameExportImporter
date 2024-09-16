@@ -35,6 +35,7 @@ function main() {
     }
     else {
         var file = File(importInfo.destination);
+        file.encoding = 'shift-jis';
         file.open("r");
         var strctText = file.read();
         file.close();
